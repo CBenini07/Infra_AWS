@@ -18,7 +18,7 @@ O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma c
 - **Descrição:** Tendo em vista o grande volume de dados processados de forma constante pela indústria, optou-se por uma instância AWS otimizada para armazenamento, a fim de garantir estabilidade na leitura e escrita de grandes volumes da dados (eg. informações logísticas, transações comerciais, lista de materiais).
 
     Fora isso, para garantir otimização de custos, optou-se por utiliar o serviço EC2 AutoScaling com scaling dinâmico, que redimensiona o volume de instâncias de acordo com a demanda de recursos computacioanais.
-    ![Exemplo EC2 AutoScaling](image-1.png)
+    ![Exemplo EC2 AutoScaling](images\image-1.png)
 
 ### Etapa 2 - Implementação de armazenamento em cloud: 
 - **Ferramenta:** Amazon S3 (Simple Storage Service)
@@ -26,7 +26,7 @@ O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma c
 - **Descrição:** 
 
     1. Para dados de acesso constante (eg. listas de materiais/produtos, Planilhas de estoque e logística), utilizar o **S3 Inteligent - Tiering**, que gerencia automaticamente o ciclo de vida dos objetos armazenados otimizando custos.
-    ![Diagrama S3 Inteligent - Tiering](image.png)
+    ![Diagrama S3 Inteligent - Tiering](images\image.png)
     2. Para dados acessados com menor recorrência (eg. Documentos regulatórios, Registros de lotes de produção), mas que ainda precisam de recuperação rápida, optou-se pelo **S3 Glacier Instant Retrieval**, que possui custo menor que o anterior, mas também menor taxa de recuperação.
 
 
@@ -39,7 +39,7 @@ O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma c
 ## Conclusão
 A implementação de ferramentas na empresa Abstergo Industries tem como esperado uma infraestrutura cloud otimizada, segura e escalável, o que aumentará a produtividade e eficiência da empresa. Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
 
-![Visualização completa da infraestrutura proposta](image-2.png)
+![Visualização completa da infraestrutura proposta](images\image-2.png)
 
 ## Anexos
 
